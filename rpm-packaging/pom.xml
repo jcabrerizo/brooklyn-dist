@@ -272,6 +272,9 @@
                     <preremoveScriptlet>
                         <scriptFile>${basedir}/rpm/preremove.sh</scriptFile>
                     </preremoveScriptlet>
+                    <postremoveScriptlet>
+                        <scriptFile>${basedir}/rpm/postremove.sh</scriptFile>
+                    </postremoveScriptlet>
                 </configuration>
             </plugin>
         </plugins>
