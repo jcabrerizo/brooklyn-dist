@@ -17,7 +17,8 @@
 # specific language governing permissions and limitations
 # under the License.
 
+# Remove the symbolic link "/opt/brooklyn" if exists
 sLink="/opt/brooklyn"
-if [ -L "$sLink" ] ; then
+if [[ -L $sLink && -d $sLink ]]; then
     rm "$sLink"
 fi
